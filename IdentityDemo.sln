@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityDemo.WebApi", "IdentityDemo.WebApi\IdentityDemo.WebApi.csproj", "{F1C5B2C6-777F-46D8-875C-1F3FAD9D8BC6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityDemo.WebApi", "IdentityDemo.WebApi\IdentityDemo.WebApi.csproj", "{F1C5B2C6-777F-46D8-875C-1F3FAD9D8BC6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityDemo.Tests", "IdentityDemo.Tests\IdentityDemo.Tests.csproj", "{3B0C7C82-D5B4-4288-91D7-489120EE1403}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityDemo.Tests", "IdentityDemo.Tests\IdentityDemo.Tests.csproj", "{3B0C7C82-D5B4-4288-91D7-489120EE1403}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
