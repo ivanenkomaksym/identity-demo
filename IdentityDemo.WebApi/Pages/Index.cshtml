@@ -1,4 +1,6 @@
 ﻿@page
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
 @model IndexModel
 @{
     ViewData["Title"] = "Home page";
@@ -26,8 +28,14 @@
 
 <body>
     <br>
-    <h5 class="card-header text-center">Vanilla JavaScript SPA calling MS Graph API with MSAL.js</h5>
+    <h5 class="card-header text-center">ASP.NET Identity SPA</h5>
     <br>
+    <div class="row" style="margin:auto">
+        <div>
+            <button class="btn btn-primary" id="weatherButton" onclick="weatherForecast()">Get Weather Forecast</button>
+        </div>
+        <div id="weatherForecast-div"></div>
+    </div>
     <br>
     <br>
 
@@ -41,6 +49,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
             integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
             crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="~/js/ui.js"></script>
 </body>
 
 </html>
