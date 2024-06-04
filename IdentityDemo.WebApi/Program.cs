@@ -1,4 +1,5 @@
 using IdentityDemo.WebApi.Models;
+using IdentityDemo.WebApi.Models.Identity;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
@@ -9,6 +10,9 @@ builder.Services.AddRazorPages();
 builder.Services.AddIdentityApiEndpoints<IdentityUser>()
     .AddEntityFrameworkStores<ApplicationDbContext>()
     .AddDefaultUI();
+
+builder.Services.AddTransient<IdentityDataSeeder>();
+builder.Services.AddHostedService<SetupIdentityDataSeeder>();
 
 builder.Services.AddDbContext<ApplicationDbContext>(
     options => options.UseInMemoryDatabase("AppDb"));
